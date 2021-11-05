@@ -1,0 +1,182 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Args",
+            "request": "launch",
+            "mainClass": "Args",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hello",
+            "request": "launch",
+            "mainClass": "Hello",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch alphabet_case",
+            "request": "launch",
+            "mainClass": "alphabet_case",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch armstrong",
+            "request": "launch",
+            "mainClass": "armstrong",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch calculator",
+            "request": "launch",
+            "mainClass": "calculator",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch factors",
+            "request": "launch",
+            "mainClass": "factors",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch fibonacci1",
+            "request": "launch",
+            "mainClass": "fibonacci1",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch fibonacci2",
+            "request": "launch",
+            "mainClass": "fibonacci2",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch floats",
+            "request": "launch",
+            "mainClass": "floats",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch if_while_for",
+            "request": "launch",
+            "mainClass": "if_while_for",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch input",
+            "request": "launch",
+            "mainClass": "input",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch integer_of_float",
+            "request": "launch",
+            "mainClass": "integer_of_float",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch largest_of_three",
+            "request": "launch",
+            "mainClass": "largest_of_three",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch largest_of_two",
+            "request": "launch",
+            "mainClass": "largest_of_two",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch name",
+            "request": "launch",
+            "mainClass": "name",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch odd_even",
+            "request": "launch",
+            "mainClass": "odd_even",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch primitive",
+            "request": "launch",
+            "mainClass": "primitive",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch product_and_sum",
+            "request": "launch",
+            "mainClass": "product_and_sum",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch repeated_num",
+            "request": "launch",
+            "mainClass": "repeated_num",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch reverse",
+            "request": "launch",
+            "mainClass": "reverse",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch simple_interest",
+            "request": "launch",
+            "mainClass": "simple_interest",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch str_palindrome",
+            "request": "launch",
+            "mainClass": "str_palindrome",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch sum_of_n",
+            "request": "launch",
+            "mainClass": "sum_of_n",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch temp_conv",
+            "request": "launch",
+            "mainClass": "temp_conv",
+            "projectName": "JAVA_1bf30080"
+        }
+    ]
+}

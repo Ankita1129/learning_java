@@ -12,6 +12,7 @@ public class floats {
         boolean e = true;
         System.out.println(a + " " + b + " " + c + " " + d + " " + e);
 
+        // byte takes modulo
         System.out.println("Enter p: ");
         Scanner p = new Scanner(System.in);
         int r = p.nextInt();

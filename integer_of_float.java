@@ -14,7 +14,7 @@ public class integer_of_float {
 
         // byte takes modulo
         byte p = 20;
-        int q = p * 2;
+        int q = p * 120;
         System.out.println(q);
     }
 }

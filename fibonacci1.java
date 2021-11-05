@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
-public class fibonacci {
+//printing fibonacci series upto nth term
+
+public class fibonacci1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter any integer: ");

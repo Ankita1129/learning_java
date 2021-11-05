@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class largest_num {
+public class largest_of_two {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
