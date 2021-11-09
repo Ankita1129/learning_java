@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch nested_switch",
+            "request": "launch",
+            "mainClass": "nested_switch",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch perfect_number",
+            "request": "launch",
+            "mainClass": "perfect_number",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch hcf_of_2",
+            "request": "launch",
+            "mainClass": "hcf_of_2",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
