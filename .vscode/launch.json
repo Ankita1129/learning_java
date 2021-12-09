@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GFG7",
+            "request": "launch",
+            "mainClass": "GFG7",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch GFG5",
+            "request": "launch",
+            "mainClass": "GFG5",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch GFG",
+            "request": "launch",
+            "mainClass": "GFG",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch GFG1",
+            "request": "launch",
+            "mainClass": "GFG1",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
             "name": "Launch nested_switch",
             "request": "launch",
             "mainClass": "nested_switch",
