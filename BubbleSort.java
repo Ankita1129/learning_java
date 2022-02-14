@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class BubbleSort {
@@ -19,7 +18,7 @@ public class BubbleSort {
                     }
                 }
             }
-            System.out.println(Arrays.toString(arr)); // converting array to string
+            System.out.println(N - 3); // converting array to string
             scanner.close();
         }
     }

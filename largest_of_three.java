@@ -20,7 +20,7 @@ public class largest_of_three {
         // Second method
         float max2 = Math.max(c, Math.max(a, b));
 
-        System.out.println("Largest number is: " /* + max1 or max2 */);
+        System.out.println("Largest number is: " + max1 + max2);
         input.close();
     }
 }

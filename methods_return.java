@@ -8,7 +8,7 @@ public class methods_return {
 
     // return the value type
 
-    static int sum2() {
+    public static int sum2() {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter number 1: ");
         int num1 = in.nextInt();

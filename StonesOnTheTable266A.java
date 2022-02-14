@@ -5,13 +5,13 @@ public class StonesOnTheTable266A {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         String S = scanner.next();
-        char prev = S.charAt(0);
+        char previous = S.charAt(0);
         int count = 0;
         for (int i = 1; i < n; i++) {
-            if (S.charAt(i) == prev) {
+            if (S.charAt(i) == previous) {
                 count++;
             } else {
-                prev = S.charAt(i);
+                previous = S.charAt(i);
             }
         }
         System.out.println(count);

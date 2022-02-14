@@ -6,6 +6,307 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch g",
+            "request": "launch",
+            "mainClass": "g",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch f",
+            "request": "launch",
+            "mainClass": "f",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch e",
+            "request": "launch",
+            "mainClass": "e",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch d",
+            "request": "launch",
+            "mainClass": "d",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch aa",
+            "request": "launch",
+            "mainClass": "aa",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch merge_two_sorted_arrays",
+            "request": "launch",
+            "mainClass": "merge_two_sorted_arrays",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch selection_sort",
+            "request": "launch",
+            "mainClass": "selection_sort",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch insertion_sort",
+            "request": "launch",
+            "mainClass": "insertion_sort",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch b",
+            "request": "launch",
+            "mainClass": "b",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch StonesOnTheTable266A",
+            "request": "launch",
+            "mainClass": "StonesOnTheTable266A",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch ab",
+            "request": "launch",
+            "mainClass": "ab",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch matrix_input",
+            "request": "launch",
+            "mainClass": "matrix_input",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch a",
+            "request": "launch",
+            "mainClass": "a",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch c",
+            "request": "launch",
+            "mainClass": "c",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch triangular_num",
+            "request": "launch",
+            "mainClass": "triangular_num",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch n",
+            "request": "launch",
+            "mainClass": "n",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch negate",
+            "request": "launch",
+            "mainClass": "negate",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch t",
+            "request": "launch",
+            "mainClass": "t",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch range",
+            "request": "launch",
+            "mainClass": "range",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch cleaner",
+            "request": "launch",
+            "mainClass": "cleaner",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch music",
+            "request": "launch",
+            "mainClass": "music",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch rectangle",
+            "request": "launch",
+            "mainClass": "rectangle",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch shift_and_reverse",
+            "request": "launch",
+            "mainClass": "shift_and_reverse",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch romantic_reversals",
+            "request": "launch",
+            "mainClass": "romantic_reversals",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch max_trio",
+            "request": "launch",
+            "mainClass": "max_trio",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch Codechef",
+            "request": "launch",
+            "mainClass": "Codechef",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch weird_values",
+            "request": "launch",
+            "mainClass": "weird_values",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch finding_pairs",
+            "request": "launch",
+            "mainClass": "finding_pairs",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch brutal_xors",
+            "request": "launch",
+            "mainClass": "brutal_xors",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch stable_seq",
+            "request": "launch",
+            "mainClass": "stable_seq",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch codechef2",
+            "request": "launch",
+            "mainClass": "codechef2",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch codechef1",
+            "request": "launch",
+            "mainClass": "codechef1",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch fake",
+            "request": "launch",
+            "mainClass": "fake",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch trial",
+            "request": "launch",
+            "mainClass": "trial",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch min_height",
+            "request": "launch",
+            "mainClass": "min_height",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch kadanes_algo",
+            "request": "launch",
+            "mainClass": "kadanes_algo",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch intro_hashmap",
+            "request": "launch",
+            "mainClass": "intro_hashmap",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch highest_frequency_hashmap",
+            "request": "launch",
+            "mainClass": "highest_frequency_hashmap",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch quick_sort",
+            "request": "launch",
+            "mainClass": "quick_sort",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch partioning_at_zero",
+            "request": "launch",
+            "mainClass": "partioning_at_zero",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch sort_without_sorting",
+            "request": "launch",
+            "mainClass": "sort_without_sorting",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
+            "name": "Launch reverse_string",
+            "request": "launch",
+            "mainClass": "reverse_string",
+            "projectName": "JAVA_1bf30080"
+        },
+        {
+            "type": "java",
             "name": "Launch GFG7",
             "request": "launch",
             "mainClass": "GFG7",
