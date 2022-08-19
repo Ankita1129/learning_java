@@ -24,7 +24,7 @@ public class Ichihime_and_Triangle {
         int c = sc.nextInt();
         int d = sc.nextInt();
 
-        pw.println(b + " " + c + " " + (c));
+        pw.println(b + a + d + " " + c + " " + (c));
     }
 
     static boolean isEven(int n) {
