@@ -16,37 +16,32 @@ class codechef4 {
         pw.close();
     }
 
-    public static void solve() {
+    public static int solve() {
         int n = sc.nextInt();
-        int m = sc.nextInt();
-        int x = sc.nextInt();
-        int y = sc.nextInt();
-        n += m;
-        n -= 2;
-        if (n <= x) {
-            x -= n;
-            x++;
-            if ((x & 1) == 0) {
-                if (y > 1) {
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int last = arr[n - 1];
+        int first = arr[0];
+        if (first == last) {
+            pw.println("YES");
+            return 0;
+        }
+        for (int i = n - 1; i >= 0; i--) {
+            if (arr[i] == first) {
+                if (i == n - 1) {
                     pw.println("YES");
-                } else {
-                    pw.println("NO");
+                    return 0;
                 }
-            } else {
-                if (y > 0) {
+                if (arr[i + 1] == last) {
                     pw.println("YES");
-                } else {
-                    pw.println("NO");
+                    return 0;
                 }
-            }
-        } else {
-            n -= x;
-            if (n < y) {
-                pw.println("YES");
-            } else {
-                pw.println("NO");
             }
         }
+        pw.println("NO");
+        return 0;
     }
 
     static boolean isEven(int n) {

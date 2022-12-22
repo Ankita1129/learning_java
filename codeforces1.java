@@ -8,7 +8,7 @@ public class codeforces1 {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int tc = sc.nextInt();
         for (int i = 0; i < tc; i++) {
             solve();
@@ -16,37 +16,24 @@ public class codeforces1 {
         pw.close();
     }
 
-    public static void solve() {
+    public static int solve() {
         int n = sc.nextInt();
         int k = sc.nextInt();
-        if (k % 4 == 0) {
-            pw.println("NO");
-        } else {
-            pw.println("YES");
-            if ((k & 1) == 0) {
-                while (n > 1) {
-                    if (n % 4 == 0) {
-                        pw.println((n - 1) + " " + n);
-                    } else {
-                        pw.println(n + " " + (n - 1));
-                    }
-                    n -= 2;
-                }
-            } else {
-                while (n > 1) {
-                    pw.println((n - 1) + " " + n);
-                    n -= 2;
-                }
-            }
+        int[] h = new int[n];
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < n; i++) {
+            h[i] = sc.nextInt();
         }
-    }
+        int[] p = new int[n];
+        for (int i = 0; i < n; i++) {
+            p[i] = sc.nextInt();
+        }
+        long sum = k;
+        int a = 0, b = 0;
 
-    static boolean isEven(int n) {
-        if ((n ^ 1) == n + 1) {
-            return true;
-        } else {
-            return false;
-        }
+        pw.println("NO");
+
+        return 0;
     }
 
     static class FastReader {

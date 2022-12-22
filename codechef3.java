@@ -18,18 +18,29 @@ class codechef3 {
         pw.close();
     }
 
-    public static void solve() {
+    public static int solve() {
         int n = sc.nextInt();
-        long gcd = 0;
-        long[] arr = new long[n];
-        arr[0] = sc.nextLong();
-        for (int i = 1; i < n; i++) {
-            arr[i] = sc.nextLong();
-            gcd = gcd(arr[i - 1], arr[i]);
-            arr[i] = gcd;
+        int[] arr = new int[n];
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+            min = Math.min(min, arr[i]);
         }
 
-        pw.println(gcd * n);
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] % min == 0) {
+                if (min != arr[i]) {
+                    count++;
+                }
+            } else {
+                pw.println(n);
+                return 0;
+            }
+        }
+
+        pw.println(count);
+        return 0;
     }
 
     static long gcd(long a, long b) {

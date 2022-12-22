@@ -1,9 +1,10 @@
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.math.BigInteger;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.StringTokenizer;
 
 class codechef5 {
@@ -18,28 +19,28 @@ class codechef5 {
         pw.close();
     }
 
-    public static void solve() {
+    public static int solve() {
         int n = sc.nextInt();
-        int k = sc.nextInt();
-        String s = "";
-        do {
-            s = sc.nextLine();
-        } while (s.length() != n);
-        char[] arr = s.toCharArray();
-        int count = 0;
-        for (int i = 0; i <= (n - k); i++) {
-            if (arr[i] == '1') {
-                for (int j = i; j < (k + i); j++) {
-                    arr[j] = (arr[j] == '1') ? '0' : '1';
+        int[] arr = new int[2 * n];
+        for (int i = 0; i < (n * 2); i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        Arrays.sort(arr);
+        HashMap<Integer, Integer> hm = new HashMap<>();
+        int sub = 0;
+        for (int i = 0; i < n; i++) {
+            sub = arr[n - 1 - i] - arr[i];
+            if (hm.containsKey(sub)) {
+                if (hm.get(sub) == 2) {
+                    pw.println("NO");
+                    return 0;
                 }
-                count++;
-            }
-            if (count == (n - k + 1)) {
-                break;
             }
         }
-        String ans = String.valueOf(arr);
-        pw.println(ans);
+
+        pw.println();
+        return 0;
     }
 
     public int findGCD(int a, int b) {

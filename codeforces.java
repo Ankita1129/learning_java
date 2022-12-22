@@ -1,4 +1,3 @@
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -9,7 +8,7 @@ public class codeforces {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int tc = sc.nextInt();
         for (int i = 0; i < tc; i++) {
             solve();
@@ -17,44 +16,41 @@ public class codeforces {
         pw.close();
     }
 
-    public static void solve() {
-        int n = sc.nextInt();
-        int q = sc.nextInt();
-        int[] a = new int[n];
-        int max = 0;
-        for (int i = 0; i < n; i++) {
-            a[i] = sc.nextInt();
-            max = Math.max(max, a[i]);
+    public static int solve() {
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+
+        int[] arr = new int[4];
+        arr[0] = a;
+        arr[1] = b;
+        arr[2] = c;
+        arr[3] = d;
+        if ((arr[0] < arr[1]) && (arr[2] < arr[3]) && (arr[0] < arr[2]) && (arr[1] < arr[3])) {
+            pw.println("YES");
+            return 0;
         }
-        int[] aq = new int[2 * q];
-        for (int i = 0; i < (2 * q); i++) {
-            aq[i] = sc.nextInt();
-        }
-        if (max == a[0]) {
-            for (int i = 0; i < (2 * q); i += 2) {
-                if (aq[i] - 1 == 0) {
-                    pw.println(aq[i + 1]);
-                } else {
-                    pw.println(0);
-                }
-            }
-        } else {
-            for (int i = 0; i < (2 * q); i += 2) {
-                if (max > a[aq[i] - 1]) {
-                    pw.println(0);
-                } else {
-                    pw.println(aq[i + 1] - aq[i] + 2);
-                }
+
+        for (int i = 0; i <= arr.length; i++) {
+            int temp = arr[3];
+            arr[3] = arr[1];
+            arr[1] = arr[0];
+            arr[0] = arr[2];
+            arr[2] = temp;
+
+            if ((arr[0] < arr[1]) && (arr[2] < arr[3]) && (arr[0] < arr[2]) && (arr[1] < arr[3])) {
+                pw.println("YES");
+                return 0;
             }
         }
-    }
+        if ((arr[0] < arr[1]) && (arr[2] < arr[3]) && (arr[0] < arr[2]) && (arr[1] < arr[3])) {
+            pw.println("YES");
+            return 0;
+        }
+        pw.println();
 
-    static boolean isEven(int n) {
-
-        if ((n ^ 1) == n + 1)
-            return true;
-        else
-            return false;
+        return 0;
     }
 
     static class FastReader {

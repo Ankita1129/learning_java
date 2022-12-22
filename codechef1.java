@@ -19,18 +19,14 @@ class codechef1 {
     }
 
     public static void solve() {
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
-        if (a < c) {
-            a = c;
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        int max = 0;
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+            max = Math.max(max, arr[i]);
         }
-        if (a <= b) {
-            pw.println("YES");
-        } else {
-            pw.println("NO");
-        }
-
+        pw.println(max);
     }
 
     public int gcd(int a, int b) {

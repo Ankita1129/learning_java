@@ -20,14 +20,17 @@ class codechef2 {
 
     public static void solve() {
         int n = sc.nextInt();
-        int x = sc.nextInt();
-        int k = 0;
-        for (int i = 0; i < n; i++) {
-            if (((i ^ n) & x) == 0) {
-                k++;
-            }
+        String s = "";
+        do {
+            s = sc.nextLine();
+        } while (s.length() != n);
+
+        StringBuilder sb = new StringBuilder(s);
+        if (sb.substring(0, (sb.length() / 2)).equals(sb.substring(sb.length() / 2, sb.length()))) {
+            pw.println("YES");
+        } else {
+            pw.println("NO");
         }
-        pw.println(k);
 
     }
 

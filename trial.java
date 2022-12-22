@@ -1,118 +1,130 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
-public class trial {
-    static PrintWriter pw = new PrintWriter(System.out);
-    static FastReader sc = new FastReader();
+class complexop {
+    float real, imaginary;
 
-    public static void main(String[] args) throws Exception {
-        int tc = sc.nextInt();
-        for (int i = 0; i < tc; i++) {
-            solve();
-        }
-        pw.close();
+    // ! Default constructor
+    complexop() {
+        real = 0;
+        imaginary = 0;
     }
 
-    public static void solve() {
-        long x = sc.nextLong();
-        long y = sc.nextLong();
-        long a = 0;
-        long b = 0;
-        if ((x & 1) == 0) {
-            x /= 2;
-            a = x;
-            b = x;
-        } else {
-            x /= 2;
-            a = x;
-            b = x + 1;
-        }
-        long c = b + 1;
-        long d = 0;
-        int count = 0;
-        if ((y / c) < b) {
-            pw.println(-1);
-            count = 50;
-        } else {
-            for (long i = c; i < (y / c); i++) {
-                if ((y % i) == 0) {
-                    c = i;
-                    d = y / i;
-                    count++;
+    // ! Paramaterized constructor.
+    complexop(float r, float i) {
+        real = r;
+        imaginary = i;
+
+    }
+
+    // ! Taking input of complex numbers.
+    void extract() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the real part:");
+        this.real = sc.nextInt();
+        System.out.println("Enter the imaginary part:");
+        this.imaginary = sc.nextInt();
+    }
+
+    // ! Displaying the complex numbers.
+    void display() {
+        if (imaginary == 0)
+            System.out.println("The Complex number is: " + this.real);
+        else if (real == 0)
+            System.out.println("The Complex number is: " + this.imaginary + "i");
+        else if (imaginary < 0)
+            System.out.println("The Complex number is: " + this.real + "-" + this.imaginary + "i");
+        else
+            System.out.println("The Complex number is: " + this.real + "+" + this.imaginary + "i");
+    }
+
+    // ! Addition of complex numbers.
+    void sum(complexop c1, complexop c2) {
+        this.real = c1.real + c2.real;
+        this.imaginary = c1.imaginary + c2.imaginary;
+        System.out.println("Addition is: " + this.real + " + " + this.imaginary + "i");
+    }
+
+    // ! Subtraction of complex numbers
+    void subtract(complexop c1, complexop c2) {
+        this.real = c1.real - c2.real;
+        this.imaginary = c1.imaginary - c2.imaginary;
+        System.out.println("Subtraction is: " + this.real + " + " + this.imaginary + "i");
+    }
+
+    // ! Multiplication of complex numbers.
+    void multiply(complexop c1, complexop c2) {
+        this.real = c1.real * c2.real;
+        this.imaginary = c1.imaginary * c2.imaginary;
+        System.out.println("Multiplication is: " + this.real + " + " + this.imaginary + "i");
+    }
+
+    // ! Division of complex numbers.
+    void divide(complexop c1, complexop c2) {
+        this.real = (c1.real * c2.real + c1.imaginary * c2.imaginary)
+                / (c1.real * c1.real + c2.imaginary * c2.imaginary);
+        this.imaginary = (c1.imaginary * c2.real - c1.real * c2.imaginary)
+                / (c2.real * c2.real + c2.imaginary * c2.imaginary);
+        System.out.println("Division is: " + this.real + " + " + this.imaginary + "i");
+    }
+}
+
+class complex {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        float r, i;
+        System.out.println("Enter the real part:");
+        r = sc.nextInt();
+        System.out.println("Enter the imaginary part:");
+        i = sc.nextInt();
+        complexop c1 = new complexop(r, i);
+        c1.display();
+        complexop c2 = new complexop();
+        c2.extract();
+        c2.display();
+        complexop c3 = new complexop();
+
+        System.out.println("Arithmetic operation on complex number");
+        System.out.println("1.addition");
+        System.out.println("2.sub");
+        System.out.println("3.multiplication");
+        System.out.println("4.division");
+        System.out.println("5.change the input");
+        System.out.println("6.Exit");
+        int num;
+
+        do {
+            System.out.println("enter your choice");
+            num = sc.nextInt();
+            switch (num) {
+                case 1:
+                    c1.display();
+                    c2.display();
+                    c3.sum(c1, c2);
                     break;
-                }
-            }
-        }
-        if (count == 0) {
-            c = a - 1;
-            for (int i = 1; i < c; i++) {
-                if ((y % i) == 0) {
-                    c = i;
-                    d = y / i;
-                    count++;
+                case 2:
+                    c1.display();
+                    c2.display();
+                    c3.subtract(c1, c2);
                     break;
-                }
+                case 3:
+                    c1.display();
+                    c2.display();
+                    c3.multiply(c1, c2);
+                    break;
+                case 4:
+                    c1.display();
+                    c2.display();
+                    c3.divide(c1, c2);
+                    break;
+                case 5:
+                    c1.extract();
+                    c1.display();
+                    c2.extract();
+                    c2.display();
+                default:
+                    System.out.println("Invalid choice no");
+                    break;
             }
-
-        }
-        if (count == 1) {
-            pw.println(a + " " + b);
-            pw.println(Math.min(c, d) + " " + Math.max(c, d));
-        }
-
-    }
-
-    static boolean isEven(int n) {
-        if ((n ^ 1) == n + 1) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    static class FastReader {
-        BufferedReader br;
-        StringTokenizer st;
-
-        public FastReader() {
-            br = new BufferedReader(
-                    new InputStreamReader(System.in));
-        }
-
-        String next() {
-            while (st == null || !st.hasMoreElements()) {
-                try {
-                    st = new StringTokenizer(br.readLine());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            return st.nextToken();
-        }
-
-        int nextInt() {
-            return Integer.parseInt(next());
-        }
-
-        long nextLong() {
-            return Long.parseLong(next());
-        }
-
-        double nextDouble() {
-            return Double.parseDouble(next());
-        }
-
-        String nextLine() {
-            String str = "";
-            try {
-                str = br.readLine();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return str;
-        }
+        } while (num < 6);
     }
 }

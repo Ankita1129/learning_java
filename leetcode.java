@@ -11,27 +11,40 @@ public class leetcode {
     static FastReader sc = new FastReader();
 
     public static void main(String[] args) throws Exception {
-        String key = "the quick brown fox jumps over the lazy dog";
-        String message = "vkbs bs t suepuv";
-
-        HashMap<Character, Character> hm = new HashMap<>();
-        int p = 97;
-        for (int i = 0; i < key.length(); i++) {
-            if ((key.charAt(i) != ' ') && (!hm.containsKey(key.charAt(i)))) {
-                hm.put(key.charAt(i), (char) (p));
-                p++;
+        String s = "            the    sky    is     blue      ";
+        StringBuilder sb = new StringBuilder();
+        int count = 0;
+        int size = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (((int) (s.charAt(i))) != 32) {
+                sb.append(s.charAt(i));
+                // System.out.println(sb.toString());
+                count++;
+                size++;
+            } else if ((((int) (s.charAt(i))) == 32) && (count != 0) && (((int) (s.charAt(i - 1))) != 32)) {
+                sb.append(" ");
+                // System.out.println(sb.toString());
+                count = 0;
+                size++;
             }
         }
-
-        String ans = "";
-        for (int i = 0; i < message.length(); i++) {
-            if (message.charAt(i) == ' ') {
-                ans += ' ';
-                continue;
-            }
-            ans += hm.get(message.charAt(i));
+        if (((int) (sb.charAt(size - 1))) == 32) {
+            sb.delete(size - 1, size);
+            size--;
         }
-        pw.println(ans);
+        // System.out.println(sb.toString());
+        StringBuilder ans = new StringBuilder();
+        count = size;
+        for (int i = (size - 1); i >= 0; i--) {
+            if (((int) (sb.charAt(i))) == 32) {
+                ans.append(sb.substring((i + 1), count));
+                ans.append(" ");
+                // System.out.println(ans.toString());
+                count = i;
+            }
+        }
+        ans.append(sb.substring(0, count));
+        System.out.println(ans.toString());
         pw.close();
     }
 
