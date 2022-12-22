@@ -75,7 +75,7 @@ public class F_Football {
             }
             return 0;
         }
-
+        // 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
     }
 
     static class FastReader {
