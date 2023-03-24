@@ -9,7 +9,7 @@ public class Assigning_to_classes {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int tc = sc.nextInt();
         for (int i = 0; i < tc; i++) {
             solve();

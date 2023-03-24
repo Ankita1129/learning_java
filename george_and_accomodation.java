@@ -11,7 +11,7 @@ public class george_and_accomodation {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int n = sc.nextInt();
         int result = 0;
         for (int i = 0; i < n; i++) {

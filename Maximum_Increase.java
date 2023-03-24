@@ -11,7 +11,7 @@ public class Maximum_Increase {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int n = sc.nextInt();
         ArrayList<Integer> al = new ArrayList<Integer>();
         al.add(1);

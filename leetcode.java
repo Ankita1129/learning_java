@@ -10,7 +10,7 @@ public class leetcode {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         String s = "            the    sky    is     blue      ";
         StringBuilder sb = new StringBuilder();
         int count = 0;

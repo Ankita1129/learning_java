@@ -9,7 +9,7 @@ public class swt {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int nums[] = { -4, -1, 0, 3, 10 };
         int i = 0, j = 0;
         for (int k = 0; k < nums.length; k++) {

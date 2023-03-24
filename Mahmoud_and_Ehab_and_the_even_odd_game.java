@@ -10,7 +10,7 @@ public class Mahmoud_and_Ehab_and_the_even_odd_game {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int n = sc.nextInt();
         if ((n & 1) == 0) {
             pw.println("Mahmoud");

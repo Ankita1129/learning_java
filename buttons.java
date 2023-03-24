@@ -11,7 +11,7 @@ public class buttons {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int n = sc.nextInt();
         int k = n - 2;
         int sum = 2 * n - 1;

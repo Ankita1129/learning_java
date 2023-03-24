@@ -11,7 +11,7 @@ public class Vanya_and_Cubes {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int n = sc.nextInt();
         int count = 2;
         int max = 1;

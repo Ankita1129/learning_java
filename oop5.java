@@ -86,7 +86,7 @@ class car implements Vehicle {
     }
 }
 
-class main_fxn {
+public class oop5 {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter gear: ");
@@ -96,7 +96,7 @@ class main_fxn {
         System.out.print("Enter speed: ");
         int speed = sc.nextInt();
 
-        Vehicle A = new Bicycle(gear, brake, speed);
+        Vehicle A = new Bicycle(gear, brake, speed); // ! dynamic binding
         A.Gear_change();
         A.speed_up();
         A.apply_brakes();

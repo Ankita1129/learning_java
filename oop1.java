@@ -44,7 +44,6 @@ class complex_op {
 }
 
 class complex {
-
     public static void main(String args[]) {
         float real1, real2, imag1, imag2;
         int i = 0;

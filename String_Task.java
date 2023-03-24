@@ -11,7 +11,7 @@ public class String_Task {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         String str = sc.nextLine();
         str = str.toLowerCase();
         str = str.replaceAll("[aeiouy]", "");

@@ -17,21 +17,16 @@ public class codeforces1 {
     }
 
     public static int solve() {
-        int n = sc.nextInt();
-        int k = sc.nextInt();
-        int[] h = new int[n];
-        int min = Integer.MAX_VALUE;
-        for (int i = 0; i < n; i++) {
-            h[i] = sc.nextInt();
-        }
-        int[] p = new int[n];
-        for (int i = 0; i < n; i++) {
-            p[i] = sc.nextInt();
-        }
-        long sum = k;
-        int a = 0, b = 0;
-
-        pw.println("NO");
+        long n = sc.nextLong();
+        // double val = Math.sqrt(n - 1);
+        // if (val == Math.sqrt(n - 1)) {
+        // System.out.println((long) (val) - 1);
+        // return 0;
+        // }
+        n--;
+        long val = (long) Math.sqrt(n);
+        // n = n - 1;
+        System.out.println(val);
 
         return 0;
     }

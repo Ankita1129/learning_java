@@ -11,7 +11,7 @@ public class Gennady_and_a_Card_Game {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         String s = sc.nextLine();
         int count = 0;
         String[] arr = new String[5];

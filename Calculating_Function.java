@@ -10,7 +10,7 @@ public class Calculating_Function {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         long n = sc.nextLong();
         long a = 0;
         if (n % 2 == 0) {

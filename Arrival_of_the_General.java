@@ -11,7 +11,7 @@ public class Arrival_of_the_General {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int n = sc.nextInt();
         ArrayList<Integer> arr = new ArrayList<Integer>(n);
         for (int i = 0; i < n; i++) {

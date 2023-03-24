@@ -9,7 +9,7 @@ public class binary_search {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
         int num = 1;
         int b = 0;

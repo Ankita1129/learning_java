@@ -9,7 +9,7 @@ public class code {
     static FastReader sc = new FastReader();
 
     public static void main(String[] args) {
-        int tc = sc.nextInt();
+        int tc = 1;
         for (int i = 0; i < tc; i++) {
             solve();
         }
@@ -17,62 +17,26 @@ public class code {
     }
 
     public static int solve() {
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        boolean k = false;
-        arr[0] = sc.nextInt();
-        int count = 0;
-        for (int i = 1; i < n; i++) {
-            arr[i] = sc.nextInt();
-            if (count == 0 && arr[i] >= arr[i - 1]) {
-                count++;
-                k = true;
-                continue;
-            }
-            if (count != 0 && arr[i] >= arr[i - 1]) {
-                k = true;
-            } else {
-                count = -1;
-                k = false;
-            }
-        }
-        if (count == 1) {
-            if (k) {
-                pw.println("YES");
-                return 0;
-            }
-        }
-        int[] pre = new int[n - 1];
-        for (int i = 0; i < n - 1; i++) {
-            pre[i] = arr[i] - arr[i + 1];
-        }
-        int count1 = 0, count2 = 0;
+        String str = "geekss for geekss";
+        String[] arrOfStr = str.split(" ");
 
-        for (int i = 0; i < n - 1; i++) {
-            if (pre[i] >= 0 && count1 == 0) {
-                count1++;
-                continue;
-            }
-            if (count1 != 0 && pre[i] < 0) {
-                count2++;
-            }
+        for (String a : arrOfStr) {
+            System.out.print(a + "      ");
         }
         return 0;
     }
 
-    // public int findGCD(int a, int b) {
-    // BigInteger x = new BigInteger(Integer.toString(a));
-    // BigInteger y = new BigInteger(Integer.toString(b));
-    // return (y.gcd(x)).intValue();
-    // }
-
-    // static boolean isEven(int n) {
-
-    // if ((n ^ 1) == n + 1)
-    // return true;
-    // else
-    // return false;
-    // }
+    /*
+     * i: 1
+     * j: 1
+     * i: 0
+     * j: 1
+     * i: -1
+     * j: 1
+     * i: -1
+     * j: 2
+     * 2
+     */
 
     static class FastReader {
         BufferedReader br;

@@ -96,7 +96,8 @@ class Sedan extends Car_Factory {
         System.out.println("Touch Screen Music Player- YES");
         System.out.println("Roof Window- " + Ans);
     }
-}// ============================= CLASS Small_car =============================//
+}
+// ============================= CLASS Small_car =============================//
 
 class Luxary extends Car_Factory {
     String Ans;// declaration of data member

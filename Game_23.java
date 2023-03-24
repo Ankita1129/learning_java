@@ -11,7 +11,7 @@ public class Game_23 {
     static PrintWriter pw = new PrintWriter(System.out);
     static FastReader sc = new FastReader();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int n = sc.nextInt();
         int m = sc.nextInt();
         int ans = 0;

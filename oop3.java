@@ -20,7 +20,6 @@ class publication {
 
 class book extends publication {
     String author;
-    int book_price, book_copies;
 
     void orderCopies() {
         Scanner sc = new Scanner(System.in);
@@ -29,21 +28,21 @@ class book extends publication {
         System.out.println("Enter author name:");
         author = sc.next();
         System.out.println("Enter the number of copies of the book:");
-        book_copies = sc.nextInt();
+        copies = sc.nextInt();
         setCopies(copies);
         System.out.println("Enter the price of the book:");
-        book_price = sc.nextInt();
+        price = sc.nextInt();
         setPrice(price);
     }
 
     int sellCopies() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of copies of the book:");
-        book_copies = sc.nextInt();
-        setCopies(book_copies);
+        copies = sc.nextInt();
+        setCopies(copies);
         System.out.println("Enter the price of the book:");
-        book_price = sc.nextInt();
-        setPrice(book_price);
+        price = sc.nextInt();
+        setPrice(price);
         System.out.println("Total sale of the book is: " + (copies * price));
         return (copies * price);
     }
@@ -80,12 +79,16 @@ class magazine extends publication {
     }
 }
 
-class basic {
+public class oop3 {
     public static void main(String[] args) {
         publication p1;
         p1 = new book();
         publication p2;
         p2 = new magazine();
         System.out.println("Total sale: " + (p1.sellCopies() + p2.sellCopies()));
+        book b1 = new book();
+        b1.orderCopies();
+        magazine m1 = new magazine();
+        m1.receiveIssue();
     }
 }
